@@ -1,3 +1,14 @@
+var timer;
+var timerText = document.getElementById('timer');
+
+(function (){
+  var sec = 0;
+  timer = setInterval(()=>{
+    timerText.innerHTML = '00:'+sec;
+    sec++;
+  }, 1000)
+})()
+
 function startQuiz(){
 
     const output = [];
