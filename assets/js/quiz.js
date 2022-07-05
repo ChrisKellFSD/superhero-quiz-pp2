@@ -1,5 +1,4 @@
-(function(){
-  function startQuiz(){
+function startQuiz(){
 
     const output = [];
 
@@ -17,8 +16,10 @@
           );
         }
         output.push(
-          `<div class="question"> ${currentQuestion.question} </div>
-          <div class="answers"> ${answers.join('')} </div>`
+          `<div class="slider">
+          <div class="question"> ${currentQuestion.question} </div>
+          <div class="answers"> ${answers.join('')} </div>
+          </div>`
         );
       }
     );
@@ -158,7 +159,47 @@
 
   startQuiz();
 
+  const previousButton = document.getElementById('previousQ');
+  const nextButton = document.getElementById('nextQ');
+  const slides = document.querySelectorAll('.slider');
+  let currentSlide = 0;
+
+  function showSlide(n) {
+    slides[currentSlide].classList.remove('active-slide');
+    slides[n].classList.add('active-slide');
+    currentSlide = n;
+
+    if(currentSlide === 0){
+      previousButton.style.display = 'none';
+      replayButton.style.display = 'none';
+    } else{
+      previousButton.style.display = 'inline-block';
+    } if(currentSlide === slides.length-1){
+      nextButton.style.display = 'none';
+      submitButton.style.display = 'inline-block';
+      replayButton.style.display = 'inline-block';
+    } else{
+      nextButton.style.display = 'inline-block';
+      submitButton.style.display = 'none';
+    }
+  }
+
+  showSlide(currentSlide);
+
+  function showNextSlide() {
+    showSlide(currentSlide + 1);
+  }
+  
+  function showPreviousSlide() {
+    showSlide(currentSlide - 1);
+  }
+
+  function replayQuiz() {
+    startQuiz();
+}
+
   // Event listeners
   submitButton.addEventListener('click', showResults);
-  replayButton.addEventListener('click', startQuiz);
-})();
+  replayButton.addEventListener('click', replayQuiz);
+  previousButton.addEventListener('click', showPreviousSlide);
+  nextButton.addEventListener('click', showNextSlide);
