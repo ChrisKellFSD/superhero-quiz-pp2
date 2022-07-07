@@ -98,4 +98,20 @@ const quizQuestions = [
           D: "Mystique"
         },
         correctAnswer: "A"
-      }]
+      },
+      {
+        question: "Fruit kid",
+        answers: {
+          A: "Yup",
+          B: "Maybe",
+          C: "Boom",
+          D: "Grapes"
+        },
+        correctAnswer: "A"
+      },
+    ]
+
+  
+
+  
+    

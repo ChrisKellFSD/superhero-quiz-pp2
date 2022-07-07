@@ -1,6 +1,6 @@
-// Variables
+// Global Variables
 var timer;
-var timerText = document.getElementById('timer');
+var timerNum = document.getElementById('timer');
 var sec = 0;
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
@@ -14,7 +14,7 @@ const nextButton = document.getElementById('nextQ');
 // Timer
 (function (){
   timer = setInterval(()=>{
-    timerText.innerHTML = '00:'+sec;
+    timerNum.innerHTML = '00:'+sec;
     sec++;
   }, 1000)
 })()
@@ -71,7 +71,22 @@ function makeQuiz(){
     resultsContainer.innerHTML = `You got ${numCorrect} out of ${quizQuestions.length}!`;
   }
 
-  makeQuiz();
+
+  // Pull in random questions
+ 
+  function select(n,qarray) {
+    var subset = [];
+    for(i=0;i<n;i++) {
+        randomIdx = Math.floor(Math.random()*(qarray.length));
+        subset[subset.length] = qarray[randomIdx];
+        qarray.splice(randomIdx, 1);
+    }
+    return subset;
+}
+
+var subset = select(10,quizQuestions);
+
+makeQuiz(subset);
 
 
 // Slider function to show previous and next questions
@@ -111,6 +126,7 @@ function makeQuiz(){
   function replayQuiz() {
     makeQuiz();
 }
+
 
 
 // Event listeners
