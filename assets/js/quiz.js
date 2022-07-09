@@ -2,6 +2,7 @@
 var timer;
 var timerNum = document.getElementById('timer');
 var sec = 0;
+const quizCounterText = document.getElementById('quizCounter')
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
@@ -26,7 +27,7 @@ function makeQuiz(){
     quizQuestions.forEach(
       (currentQuestion, questionNumber) => {
          const answers = [];
-
+         
         for(letter in currentQuestion.answers){
           answers.push(
             `<label>
@@ -73,7 +74,7 @@ function makeQuiz(){
 
 
   // Pull in random questions
- 
+ /** 
   function select(n,qarray) {
     var subset = [];
     for(i=0;i<n;i++) {
@@ -87,7 +88,9 @@ function makeQuiz(){
 var subset = select(10,quizQuestions);
 
 makeQuiz(subset);
+*/
 
+makeQuiz();
 
 // Slider function to show previous and next questions
   const slides = document.querySelectorAll('.slider');
@@ -124,7 +127,7 @@ makeQuiz(subset);
   }
 
   function replayQuiz() {
-    makeQuiz();
+    location.reload();
 }
 
 
