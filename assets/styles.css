@@ -22,6 +22,13 @@ h1 {
   text-shadow: 0.25rem 0.25rem black;
 }
 
+h2 {
+  font-family: Bangers, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.25rem;
+  color: white;
+}
+
 body {
   text-align: center;
 }
@@ -173,6 +180,16 @@ button:hover{
   pointer-events: all;
 }
 
+.quiz-header {
+  padding: 2rem;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(22, 2, 34);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
 .marvel-btn {
   font-size: 4rem;
   padding: 2rem 0;
@@ -209,10 +226,28 @@ button:hover{
 
 .question{
   font-family: Bangers, sans-serif;
-  font-size: 5rem;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 5vh;
+  color: white;
+  text-shadow: 0.25rem 0.25rem black;
 }
+
+input[type="radio"] {
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 2rem;
+  height: 2rem;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+}
+
 .answers {
-  margin-bottom: 20px;
+  font-family: 'Bree Serif', serif;
+  font-size: 4rem;
+  margin-bottom: 10vh;
   text-align: left;
   display: inline-block;
 }
@@ -223,8 +258,6 @@ button:hover{
 
 .slider{
     position: absolute;
-    left: 5vw;
-    top: 5vh;
     width: 100%;
     z-index: 1;
     opacity: 0;
@@ -253,16 +286,3 @@ button:hover{
   #results {
     display: block;
   }
-
-  /*.slider-btn-container {
-    font-family: Bangers, sans-serif;
-    font-size: 22px;
-    background-color: #279;
-    color: #fff;
-    border: 0px;
-    border-radius: 3px;
-    padding: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  */

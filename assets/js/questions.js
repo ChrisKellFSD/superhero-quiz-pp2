@@ -90,7 +90,7 @@ const quizQuestions = [
         correctAnswer: "B"
       },
       {
-        question: "Which of these X-Men DO NOT have either blue skin or fur",
+        question: "Which of these X-Men DO NOT have either blue skin or fur?",
         answers: {
           A: "Cyclops",
           B: "Nightcrawler",
@@ -133,7 +133,7 @@ const quizQuestions = [
           correctAnswer: "C"
         },
         {
-          question: "Ryan Reynolds acted in two Marvel movie series, one was the Deadpool movie series, the other was:",
+          question: "Ryan Reynolds acted in two Marvel movie series, one was the Deadpool movie series, the other was?",
           answers: {
             A: "Daredevil",
             B: "Captain America: Winter Soldier",
@@ -193,7 +193,7 @@ const quizQuestions = [
           correctAnswer: "B"
         },
         {
-          question: "Which of these X-Men DO NOT have either blue skin or fur",
+          question: "Which of these X-Men DO NOT have either blue skin or fur?",
           answers: {
             A: "Cyclops",
             B: "Nightcrawler",
