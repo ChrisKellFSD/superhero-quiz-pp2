@@ -1,5 +1,80 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Bree+Serif&display=swap');
+
+:root {
+background: aqua;
+background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: Bangers, sans-serif;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  letter-spacing: 0.25rem;
+  color: white;
+}
+
+a {
+  font-family: Bangers, sans-serif;
+}
+
+button {
+  font-family: Bangers, sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  font-size: 4rem;
+  padding: 2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background: rgb(255, 94, 0);
+  border-radius: 2rem;
+}
+
+.modal-btn {
+  font-size: 4rem;
+  padding: 2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  border-style: none;
+  color: white;
+  background: rgb(163, 25, 255);
+  border-radius: 2rem;
+  cursor: pointer;
 }
 
 .modal {
@@ -8,11 +83,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: .05rem solid rgb(255, 94, 0);
+  border-radius: 2rem;
   z-index: 10;
   background-color: white;
-  width: 500px;
+  width: 50vw;
   max-width: 80%;
 }
 
@@ -21,16 +96,16 @@
 }
 
 .modal-header {
-  padding: 10px 15px;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid black;
+  font-family: Bangers, sans-serif;
 }
 
 .modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-size: 2.5rem;
 }
 
 .modal-header .close-button {
@@ -38,12 +113,14 @@
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 3rem 5rem;
+  font-family: 'Bree Serif', serif;
+  font-size: 2.5rem;
 }
 
 #overlay {

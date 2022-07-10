@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <h1>Are you ready to take the quiz?</h1>
-            <a href="theme.html" id="start">Begin</a>
+        <div id="home" class="flex-column flex-center">
+            <h1>Are you ready to take <br>the Superhero quiz?</h1>
+            <a href="theme.html" id="start" class="btn">Begin</a>
+            <button data-modal-target="#modal" class="modal-btn">Rules</button>
+        <div class="modal" id="modal">
+          <div class="modal-header">
+            <div class="title">How to Play</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            Welcome to the Superhero Quiz Game. To begin, click the button and choose your quiz. Each quiz has 10 questions with 4 possible answers to choose from. Once complete, click the 'Submit Quiz' to see your score. Each quiz can then be replayed again. Good luck!
+          </div>
+        </div>
+        <div id="overlay"></div>
         </div>
     </div>
-    <button data-modal-target="#modal">Rules</button>
-    <div class="modal" id="modal">
-      <div class="modal-header">
-        <div class="title">How to Play</div>
-        <button data-close-button class="close-button">&times;</button>
-      </div>
-      <div class="modal-body">
-        Welcome to the Superhero Quiz Game. To begin, click the button and choose your quiz. Each quiz has 10 questions with 4 possible answers to choose from. Once complete, click the 'Submit Quiz' to see your score. Each quiz can then be replayed again. Good luck!
-      </div>
-    </div>
-    <div id="overlay"></div>
     <!--Font Awesome Script-->
     <script src="https://kit.fontawesome.com/aae00821c5.js" crossorigin="anonymous"></script>
     <script src="assets/js/popup.js"></script>
