@@ -63,6 +63,11 @@ button {
   border-radius: 2rem;
 }
 
+.btn:hover {
+  transition: 200ms;
+  transform: scale(1.1);
+}
+
 .modal-btn {
   font-size: 4rem;
   padding: 2rem 0;
@@ -75,6 +80,11 @@ button {
   background: rgb(163, 25, 255);
   border-radius: 2rem;
   cursor: pointer;
+}
+
+.modal-btn:hover {
+  transition: 200ms;
+  transform: scale(1.1);
 }
 
 .modal {
@@ -100,8 +110,10 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
   font-family: Bangers, sans-serif;
+  color: white;
+  background-color: rgb(255, 94, 0);
+  border-radius: 2rem 2rem 0 0;
 }
 
 .modal-header .title {
@@ -115,6 +127,7 @@ button {
   background: none;
   font-size: 2.5rem;
   font-weight: bold;
+  color: white;
 }
 
 .modal-body {
@@ -138,6 +151,40 @@ button {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.marvel-btn {
+  font-size: 4rem;
+  padding: 2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background: rgb(255, 94, 0);
+  border-radius: 2rem;
+}
+
+.marvel-btn:hover {
+  transition: 200ms;
+  transform: scale(1.1);
+}
+
+.dc-btn {
+  font-size: 4rem;
+  padding: 2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background: rgb(127, 25, 211);
+  border-radius: 2rem;
+}
+
+.dc-btn:hover {
+  transition: 200ms;
+  transform: scale(1.1);
 }
 
 .slider{
