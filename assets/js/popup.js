@@ -1,3 +1,5 @@
+//Modal code adapted from the following tutorial: https://www.youtube.com/watch?v=MBaw_6cPmAw
+
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')

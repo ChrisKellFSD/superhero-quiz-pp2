@@ -7,7 +7,7 @@ const previousButton = document.getElementById('previousQ');
 const nextButton = document.getElementById('nextQ');
 
 
-
+// Function create the quiz questions and answers
 function makeQuiz(){
 
     const output = [];
@@ -36,6 +36,7 @@ function makeQuiz(){
     quizContainer.innerHTML = output.join('');
   }
 
+  // Function to show the result of the quiz
   function showResults(){
 
     const answerContainers = quizContainer.querySelectorAll('.answers');
@@ -60,7 +61,7 @@ function makeQuiz(){
     resultsContainer.innerHTML = `You got ${numCorrect} out of ${dcQuestions.length}!`;
   }
 
-
+// Call the makeQuiz function
 makeQuiz();
 
 // Slider function to show previous and next questions
@@ -87,6 +88,7 @@ makeQuiz();
     }
   }
 
+  // function to create the next and previous buttons, utlizing z-indexing in css
   showSlide(currentSlide);
 
   function showNextSlide() {
@@ -100,8 +102,6 @@ makeQuiz();
   function replayQuiz() {
     location.reload();
 }
-
-
 
 // Event listeners
 submitButton.addEventListener('click', showResults);
