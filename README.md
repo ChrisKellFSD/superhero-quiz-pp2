@@ -106,7 +106,7 @@ This is a quiz game I created under the theme of 'Superhero'. It offers two ques
 
 # Bugs
 
- * I had a bug when I deployed my site it originally would work. The buttons onto the next pages did not work, I discovered this was because I had used absolute file paths in my code. Removing the '/' solved the problem.
+ * I had a bug that when I deployed my site it originally wouldn't work. The buttons onto the next pages did not work, I discovered this was because I had used absolute file paths in my code. Removing the '/' solved the problem.
 
 ---
 
@@ -116,7 +116,7 @@ This is a quiz game I created under the theme of 'Superhero'. It offers two ques
    * I used the following tutorial to help with my creation of the quiz game: https://www.sitepoint.com/simple-javascript-quiz/
    * Code for the popup box was adapted from following this tutorial: https://www.youtube.com/watch?v=MBaw_6cPmAw&t=192s
    * Watching youtube videos of Web Dev Simplified and Brian Designs helped with aspects of the project
-   
+
    ---
 
    **Acknowledgements**
