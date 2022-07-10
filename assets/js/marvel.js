@@ -1,5 +1,4 @@
 // Global Variables
-const quizCounterText = document.getElementById('quizCounter')
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
@@ -13,7 +12,7 @@ function makeQuiz(){
 
     const output = [];
 
-    quizQuestions.forEach(
+    marvelQuestions.forEach(
       (currentQuestion, questionNumber) => {
          const answers = [];
          
@@ -42,7 +41,7 @@ function makeQuiz(){
     const answerContainers = quizContainer.querySelectorAll('.answers');
     let numCorrect = 0;
 
-    quizQuestions.forEach( (currentQuestion, questionNumber) => {
+    marvelQuestions.forEach( (currentQuestion, questionNumber) => {
 
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
@@ -58,7 +57,7 @@ function makeQuiz(){
 
       }
     });
-    resultsContainer.innerHTML = `You got ${numCorrect} out of ${quizQuestions.length}!`;
+    resultsContainer.innerHTML = `You got ${numCorrect} out of ${marvelQuestions.length}!`;
   }
 
 
