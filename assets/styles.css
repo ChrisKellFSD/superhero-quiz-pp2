@@ -39,48 +39,11 @@ a {
   font-family: Bangers, sans-serif;
 }
 
-#previousQ,
-#nextQ {
-  font-family: Bangers, sans-serif;
-  font-size: 2.5rem;
-  background-color: #279;
-  color: #fff;
-  border: 0px;
-  border-radius: 3px;
-  padding: 20px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-#submit {
-  font-family: Bangers, sans-serif;
-  font-size: 2.5rem;
-  background-color: rgb(206, 19, 112);
-  color: #fff;
-  border: 0px;
-  border-radius: 3px;
-  padding: 20px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-#replay {
-  font-family: Bangers, sans-serif;
-  font-size: 2.5rem;
-  background-color: rgb(224, 47, 15);
-  color: #fff;
-  border: 0px;
-  border-radius: 3px;
-  padding: 20px;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-
 button:hover {
   background-color: #38a;
 }
 
+/* Index page container */
 .container {
   width: 100vw;
   height: 100vh;
@@ -119,6 +82,8 @@ button:hover {
   transition: 200ms;
   transform: scale(1.1);
 }
+
+/* Popup box styling */
 
 .modal-btn {
   font-family: Bangers, serif;
@@ -190,6 +155,7 @@ button:hover {
   font-size: 2.5rem;
 }
 
+/* This is to create the black hue when the popup box is open */
 #overlay {
   position: fixed;
   opacity: 0;
@@ -207,16 +173,7 @@ button:hover {
   pointer-events: all;
 }
 
-.quiz-header {
-  padding: 2rem;
-  height: 10vh;
-  width: 100%;
-  background-color: rgb(22, 2, 34);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-
+/* This css is for the two buttons for the quiz types on the theme.html page */
 .marvel-btn {
   font-size: 4rem;
   padding: 2rem 0;
@@ -251,6 +208,18 @@ button:hover {
   transform: scale(1.1);
 }
 
+/* This is the header on the quiz pages, it holders the home icon that is on the right */
+.quiz-header {
+  padding: 2rem;
+  height: 10vh;
+  width: 100%;
+  background-color: rgb(22, 2, 34);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for the main question section */
 .question {
   font-family: Bangers, sans-serif;
   font-size: 4rem;
@@ -260,6 +229,9 @@ button:hover {
   text-shadow: 0.15rem 0.15rem black;
 }
 
+/* This was done to make the radio buttons look better than the standard look
+* Adapted from https://moderncss.dev/pure-css-custom-styled-radio-buttons/
+*/
 input[type="radio"] {
   background-color: #fff;
   margin: 0;
@@ -271,6 +243,7 @@ input[type="radio"] {
   border-radius: 50%;
 }
 
+/* Styling for the main question answer section */
 .answers {
   font-family: 'Bree Serif', serif;
   font-size: 4rem;
@@ -284,6 +257,7 @@ input[type="radio"] {
   margin-bottom: 10px;
 }
 
+/* Styling for the slider section */
 .slider {
   position: absolute;
   width: 100%;
@@ -295,6 +269,44 @@ input[type="radio"] {
 .active-slide {
   opacity: 1;
   z-index: 2;
+}
+
+/* Styling for the buttons you see that help navigate through the questions */
+#previousQ,
+#nextQ {
+  font-family: Bangers, sans-serif;
+  font-size: 2.5rem;
+  background-color: #279;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#submit {
+  font-family: Bangers, sans-serif;
+  font-size: 2.5rem;
+  background-color: rgb(206, 19, 112);
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#replay {
+  font-family: Bangers, sans-serif;
+  font-size: 2.5rem;
+  background-color: rgb(224, 47, 15);
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 #replay {
@@ -320,7 +332,6 @@ input[type="radio"] {
 }
 
 /* Media Query */
-
 @media screen and (max-width: 850px) {
   .modal-body {
     font-size: 2rem;
